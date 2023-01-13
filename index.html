@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumpy | DNC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/logo_dnc.png" alt="Logo Jumpy">
+    </header>
+    <main class="container">
+        <img src="assets/logo_jumpy_preto.png" alt="">
+        <h1>Bem-vindo ao <span>Jumpy!</span></h1>
+        <form action="" onsubmit="return cadastro.receberDados()">
+            <label for="">Nome completo:</label>
+            <input type="text" placeholder="Nome completo" id="nome">
+            <p id="respostanome"></p>
+            
+            <label for="">Email:</label>
+            <input type="email" placeholder="email@email.com" id="email">
+            <p id="respostaemail"></p>
+            
+            <label for="">Telefone:</label>
+            <input type="tel" placeholder="(00) 00000-0000" id="telefone">
+           
+            <label for="">CPF:</label>
+            <input type="number" placeholder="000.000.000-00" id="cpf">
+            
+            <label for="">Senha:</label>
+            <input type="password" placeholder="**********" id="senha">
+            <button type="submit" value="Submit">Cadastrar</button>
+            <p id="respostacadastro"></p>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
